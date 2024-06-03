@@ -1,0 +1,27 @@
+.pagination {
+  .dropdown-menu {
+    background-color: var(--background-table);
+    border: 0;
+    min-width: 100% !important;
+  }
+
+  .page-link {
+    color: var(--primary);
+  }
+
+  .page-link:hover {
+    background-color: var(--primary-hover);
+    border-radius: 50px;
+    color: var(--white);
+  }
+
+  .page-link:focus {
+    box-shadow: 0 0 0.2rem rgba(var(--primary-hover), 0.5);
+  }
+
+
+  .page-item.active .page-link {
+    background-color: var(--primary);
+    border-radius: 50px;
+  }
+}

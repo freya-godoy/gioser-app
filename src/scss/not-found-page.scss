@@ -1,0 +1,24 @@
+.not-found-container {
+  border: 0;
+  box-shadow: inherit;
+
+  .not-found-container--content {
+    margin: 30px auto;
+
+    .title-page {
+      color: var(--body-1);
+      font-size: resize(var(--size-22px));
+      font-weight: bold;
+      line-height: 1.14;
+      margin: 20px 0 15px;
+    }
+
+    .description-page {
+      color: var(--body-2);
+      font-size: resize(var(--size-14px));
+      line-height: 1.14;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

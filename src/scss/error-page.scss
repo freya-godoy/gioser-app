@@ -1,0 +1,61 @@
+/* stylelint-disable */
+.error-page {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    .full-screen {
+        align-items: center;
+        flex: 1;
+        height: 75vh;
+        color: #000;
+        text-align: center;
+    }
+    
+    .error-container {
+        padding-top: 4em;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .error-num {
+        font-size: 11em;
+    }
+    
+    .eye {
+        background: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        height: 100px;
+        position: relative;
+        width: 100px;
+        &::after {
+            background: #000;
+            border-radius: 50%;
+            bottom: 56.1px;
+            content: ' ';
+            height: 33px;
+            position: absolute;
+            right: 33px;
+            width: 33px;
+        }
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    p {
+        margin-bottom: 4em;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+        color: lightgray;
+        }
+    }
+}

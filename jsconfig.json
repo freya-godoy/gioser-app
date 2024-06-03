@@ -1,0 +1,20 @@
+{
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react",
+    "paths": {
+      "@Api/*": ["Api/*"],
+      "@App/*": ["App/*"],
+      "@scss/*": ["scss/*"],
+      "@components/*": ["components/*"],
+      "@core/*": ["core/*"],
+      "@helpers": ["helpers"],
+      "@helpers/*": ["helpers/*"],
+      "@constants/*": ["constants/*"],
+      "@reducers": ["core/reducers"],
+      "@actions": ["core/actions"],
+      "@selectors": ["core/selectors"]
+    }
+  }
+}

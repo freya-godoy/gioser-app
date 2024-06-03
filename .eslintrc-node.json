@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "promise"
+  ],
+  "extends": "./.eslintrc-base.json",
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "rules": {
+    "lodash/prop-shorthand": [
+      2,
+      "never"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "name": "oklahoma-server",
+  "version": "0.0.1-SNASPHOT",
+  "description": "API",
+  "main": "index.js",
+  "nodemonConfig": {
+    "ignore": [
+      "test/**/*.js",
+      "seeds/**/*.js",
+      "node_modules/**/node_modules"
+    ],
+    "restartable": "rs",
+    "delay": "3500",
+    "env": {
+      "NODE_ENV": "development"
+    }
+  },
+  "scripts": {
+    "start:migrate": "npm run db:migrate && node index.js",
+    "start": "node index.js",
+    "dev": "gulp dev",
+    "test": "gulp eslint && npm run test:cover",
+    "test:teamcity": "cross-env NODE_ENV=test PORT=9999 nyc mocha",
+    "mocha": "cross-env NODE_ENV=test PORT=9999 mocha",
+    "test:cover": "cross-env NODE_ENV=test PORT=9999 nyc mocha",
+    "lint": "gulp eslint",
+    "build": "npm install",
+    "db:mongo:seed": "node seeds/up && node seeds/down",
+    "db:mongo:migrate": "node migrate",
+    "db:migrate": "npx knex migrate:latest",
+    "db:seed": "npx knex seed:run"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "nyc": {
+    "all": true,
+    "reporter": [
+      "text",
+      "html",
+      "teamcity"
+    ],
+    "check-coverage": true,
+    "lines": 10,
+    "statements": 10,
+    "functions": 10,
+    "branches": 10,
+    "exclude": [
+      "coverage/**/*.js",
+      "commitlint.config.js",
+      "gulpfile.js",
+      "knexfile.js",
+      "src/app.js",
+      "src/global.js",
+      "src/index.js",
+      "db/**/*.js",
+      "test/**/*.js",
+      "src/services/arqService.js"
+    ]
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "escpos": "^3.0.0-alpha.4",
+    "escpos-network": "^3.0.0-alpha.5",
+    "escpos-usb": "^3.0.0-alpha.4",
+    "express": "^4.18.2",
+    "express-openapi-validator": "^4.7.2",
+    "faker": "^5.5.3",
+    "helmet": "^4.2.0",
+    "heroku": "^8.4.2",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.1",
+    "node-fetch": "^2.6.1",
+    "node-printer": "^1.0.4",
+    "nodemon": "^3.0.1",
+    "require-dir": "^1.2.0",
+    "saslprep": "^1.0.3",
+    "socket.io": "^4.6.2",
+    "spdy": "^4.0.2",
+    "swagger-ui-express": "^4.1.5",
+    "usb": "^1.8.8",
+    "uuidv4": "^6.2.5",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "del": "^6.0.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "expect": "^26.6.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-json-editor": "^2.5.4",
+    "gulp-load-plugins": "^2.0.6",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^2.0.0",
+    "husky": "^4.3.0",
+    "mocha": "^10.2.0",
+    "mock-knex": "^0.4.9",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3",
+    "sinon": "^9.2.1",
+    "supertest": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://",
+  "engines": {
+    "node": ">=12.18"
+  },
+  "author": "Prommel Andres <andresprommel22@gmail.com>",
+  "license": "MIT"
+}

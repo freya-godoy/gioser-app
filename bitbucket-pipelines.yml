@@ -1,0 +1,12 @@
+image: node:16.14.2
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - npm install -g npm
+          # install packages
+          - npm ci
+          # run the tests.
+          - npm test

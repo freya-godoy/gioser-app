@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="867" viewBox="0 0 1280 867">
+  <defs>
+    <clipPath id="clip-Mesa_de_trabajo_1">
+      <rect width="1280" height="867"/>
+    </clipPath>
+  </defs>
+  <g id="Mesa_de_trabajo_1" data-name="Mesa de trabajo – 1" clip-path="url(#clip-Mesa_de_trabajo_1)">
+    <rect width="1280" height="867" fill="#fff"/>
+    <rect id="Rectángulo_883" data-name="Rectángulo 883" width="1331.324" height="867" fill="#ad2d32"/>
+    <g id="Grupo_1157" data-name="Grupo 1157">
+      <path id="Trazado_1159" data-name="Trazado 1159" d="M1110.029,67.33v867H474.7C329.253,864.707,278.657,679.9,321.536,527.248c30.241-107.7,109.984-174.734,183.361-252.4,48.288-51.11,89.768-109.634,120.8-174.127,4.337-9.023,7.928-22.011,12.428-33.389Z" transform="translate(221.295 -67.33)" fill="#d0cdcd"/>
+      <path id="Trazado_1159-2" data-name="Trazado 1159" d="M1091.385,67.33V933.924H470.8c-142.072-69.59-191.494-254.31-149.611-406.892,29.54-107.648,107.431-174.652,179.1-252.283,47.168-51.086,87.685-109.583,118-174.046,4.236-9.019,7.744-22,12.139-33.374Z" transform="translate(230.661 -67.33)" fill="#fefefe"/>
+    </g>
+    <g id="Grupo_1156" data-name="Grupo 1156">
+      <path id="Trazado_1289" data-name="Trazado 1289" d="M544.291,67.33c-4.9,19.966-15.109,39.408-31.714,56.768-45.122,47.349-132.194,74.447-219.679,84.914a835.272,835.272,0,0,1-212.588-2.16V67.33Z" transform="translate(-84.472 -70.615)" fill="#d0cdcd"/>
+      <path id="Trazado_1290" data-name="Trazado 1290" d="M561.969,67.33c-5.086,20.367-15.685,40.2-32.923,57.908-46.841,48.3-137.231,75.941-228.049,86.619a882.3,882.3,0,0,1-220.688-2.2V67.33Z" transform="translate(-99.31 -82.33)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

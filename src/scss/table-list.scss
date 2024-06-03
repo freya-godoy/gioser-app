@@ -1,0 +1,16 @@
+
+.table.table-list {
+  th {
+    background-color: var(--background-table);
+    text-align: center;
+  }
+
+  tr {
+    text-align: center;
+  }
+
+  /* stylelint-disable selector-class-pattern */
+  tbody button .MuiSvgIcon-root {
+    color: var(--warm-grey);
+  }
+}
